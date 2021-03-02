@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>SampleClient</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autobus" Version="0.1.6" />
+      <PackageReference Include="Autobus.Extensions.Hosting" Version="0.1.4" />
+      <PackageReference Include="Autobus.Serializers.BinaryRecords" Version="0.1.7" />
+      <PackageReference Include="Autobus.Transports.RabbitMQ" Version="0.1.7" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SampleServiceInterface\SampleServiceInterface.csproj" />
+    </ItemGroup>
+
+</Project>
